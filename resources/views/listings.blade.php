@@ -1,3 +1,5 @@
+@extends('layout')
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +11,7 @@
 </head>
 
 <body>
+@section('content')
     <h1>
         {{ $heading }}
     </h1>
@@ -18,6 +21,7 @@
             <p>{{ $listing['description'] }}</p>
         @endforeach
     </h1>
+@endsection
 </body>
 
 </html>
