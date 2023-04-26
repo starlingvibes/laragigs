@@ -9,7 +9,7 @@
 <body>
     <h1>Laragigs</h1>
 
-    {{-- VIEWS --}}
+    {{-- VIEW OUTPUT --}}
     @yield('content')
 </body>
 </html>
