@@ -16,11 +16,23 @@ use App\Models\Listing;
 |
 */
 
+// Common resource routes:
+// index- show all listings
+// show - show single listing
+// create - show form to create new listing
+// store - store new listing
+// edit - show form to edit listing
+// update - update listing
+// destroy - delete listing
+
 // All listings
 Route::get(
     '/',
     [ListingController::class, 'index']
 );
+
+// Create listing form
+Route::get('/listings/create', [ListingController::class, 'create']);
 
 // Single listing
 Route::get(
@@ -34,12 +46,3 @@ Route::get(
     //     abort(404);
     // }
 );
-
-// Common resource routes:
-// index- show all listings
-// show - show single listing
-// create - show form to create new listing
-// store - store new listing
-// edit - show form to edit listing
-// update - update listing
-// destroy - delete listing
